@@ -2,10 +2,10 @@ version: 1
 frontend:
   phases:
     pre-build:
-      commands: [yarn install]
+      commands: [yarn install, npm install]
     # IMPORTANT - Please verify your build commands
     build:
-      commands: [yarn run build]
+      commands: [yarn run build, npm run build]
   artifacts:
     # IMPORTANT - Please verify your build output directory
     baseDirectory: /
